@@ -1,0 +1,108 @@
+.nav-main-container{
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+.nav-logo .nav-main-container{
+    width: 150px;
+
+}
+
+.nav-ul{
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    color:  gray;
+    font-size: 18px;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: gray;
+}
+.nav-ul a:hover{
+    color:tomato;
+    transition:ease-in-out;
+    text-decoration: underline;
+
+}
+
+.nav-btns{
+display: flex;    
+align-items: center;
+gap: 40px;
+}
+
+.nav-main-container button{
+    background: transparent;
+    font-size: 16px;
+    color: gray;
+    border: 1px solid tomato;
+    padding:  10px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.nav-main-container button:hover{
+    background-color: tomato;
+    color: white;
+}
+.bascket-icon{
+    position: relative;
+}
+.bascket-icon .dot{
+    position: absolute;
+    min-width: 10px;
+    min-height: 10px;
+    background-color: tomato;
+    border-radius: 5px;
+    top: -8px;
+    right: -8px;
+}
+
+@media (max-width:1050px){
+    .nav-main-container.logo{
+        width: 140px;
+    }
+    .nav-ul{
+        gap: 20px;
+        font-size: 17px;
+    }
+    .nav-btns{
+        gap: 30px;
+    }
+    .nav-btns img{
+        width: 22px;
+    }
+    .nav-btns button{
+        padding: 8px 25px;
+    }
+}
+
+@media (max-width:900px){
+    .nav-main-container.logo{
+        width: 120px;
+    }
+    .nav-ul{
+        gap: 15px;
+        font-size: 16px;
+    }
+    .nav-btns{
+        gap: 20px;
+    }
+    .nav-btns img{
+        width: 20px;
+    }
+    .nav-btns button{
+        padding: 7px 20px;
+        font-size: 15px;
+    }
+}
+@media (max-width:750px){
+
+    .nav-ul{
+      display: none;
+    }
+}
